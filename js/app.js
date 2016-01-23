@@ -3,59 +3,51 @@
 
     var numbers = '';
     var equation = [];
-    var buttons = document.getElementsByClassName('num');
-    for(var b = 0; b <buttons.length; b++){
-        buttons[b].addEventListener('click', function(){
-            add(this.value);
+    var buttons = document.getElementsByTagName('button');
+    for (var b = 0; b < buttons.length; b++) {
+        buttons[b].addEventListener('click', function () {
+            var val = this.value;
+            if (Number(val) || val == '.') {
+                add(this.value);
+            } else if (val == '=') {
+                equals(equation)
+            } else if (val == '-') {
+                pushIt('-')
+            } else if (val == '+') {
+                pushIt('+')
+            } else if (val == '*') {
+                pushIt('*')
+            } else if (val == '/') {
+                pushIt('/')
+            } else if (val == 'AC') {
+                numbers = '';
+                equation = [];
+                total.innerHTML = '';
+            } else if (val == 'CE') {
+                if (numbers.length > 0) {
+                    numbers = '';
+                    total.innerHTML = equation[equation.length - 2];
+                } else {
+                    equation.pop();
+                    if (numbers.length == 0 && equation.length == 0) {
+                        total.innerHTML = 0;
+                    } else {
+                        total.innerHTML = equation[equation.length - 1];
+                    }
+                }
+            }
         })
     }
-    equal.addEventListener('click', function () {
-        equals(equation)
-    });
-    plus.addEventListener('click', function () {
-        equation.push(numbers, '+');
-        numbers = '';
-        return equation;
-    });
-    minus.addEventListener('click', function () {
-        equation.push(numbers, '-');
-        numbers = '';
-        return equation
-    });
-    multiply.addEventListener('click', function () {
-        equation.push(numbers, '*');
-        numbers = '';
-        return equation
-    });
-    divide.addEventListener('click', function () {
-        equation.push(numbers, '/');
-        numbers = '';
-        return equation
-    });
-    allClear.addEventListener('click', function () {
-        numbers = '';
-        equation = [];
-        total.innerHTML = '';
-    });
-    clearLast.addEventListener('click', function () {
-        if (numbers.length > 0) {
-            numbers = '';
-            total.innerHTML = equation[equation.length - 2];
-        } else {
-            equation.pop();
-            if (numbers.length == 0 && equation.length == 0) {
-                total.innerHTML = 0;
-            } else {
-                total.innerHTML = equation[equation.length - 1];
-            }
-        }
 
-    });
-
-
+    function pushIt(val) {
+        equation.push(numbers, val);
+        numbers = '';
+    }
+    
     function add(num) {
         numbers += num;
         total.innerHTML = numbers;
+        console.log(equation, numbers);
     }
 
     function equals(equation) {
@@ -97,7 +89,7 @@
 //                entries = [];
 //                total = 0;
 //                $('#total').text(temp);
-//            } else {
+//            } else if (val == 'CE'){
 //                console.log('NAN');
 //            }
 //        });
