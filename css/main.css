@@ -1,0 +1,29 @@
+body {
+    background-color: #dddddd;
+    font-size: 2em;
+}
+
+.col-lg-3 {
+    height: 2.5em;
+    margin: 6px;
+    width: 2.5em;
+    border-radius: 2px;
+    background-color: #a7c2a3;
+}
+
+.total {
+    background-color: #a7c2a3;
+    height: 50px;
+    width: 150px;
+}
+
+.well {
+    height: 18px;
+    width: 110px;
+    margin: auto;
+}
+
+.point :hover{
+    cursor: pointer;
+    cursor: hand;
+}
