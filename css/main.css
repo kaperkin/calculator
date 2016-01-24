@@ -1,14 +1,22 @@
 body {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     font-size: 2em;
+}
+
+.container{
+    background-color: #777777;
+    border-radius: 2px;
+    margin-top: 10%;
+    max-width: 25%;
+    padding: 1em;
 }
 
 .col-lg-3 {
     height: 2.5em;
-    margin: 6px;
+    margin: .3em;
     width: 2.5em;
     border-radius: 2px;
-    background-color: #a7c2a3;
+    background-color: #dcdcdc;
 }
 
 .total {
@@ -17,13 +25,13 @@ body {
     width: 150px;
 }
 
-.well {
-    height: 18px;
-    width: 110px;
-    margin: auto;
-}
 
 .point :hover{
     cursor: pointer;
     cursor: hand;
+}
+
+.row{
+    margin: auto;
+    width: 90%;
 }
