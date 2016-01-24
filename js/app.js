@@ -142,8 +142,7 @@
 
             function add(num) {
                 numbers += num;
-                total.innerHTML = numbers;
-                console.log(equation, numbers);
+                total.innerHTML = numbers.substr(0, 9);
             }
 
             function equals(equation) {
@@ -162,7 +161,7 @@
                         answer /= Number(next);
                     }
                 }
-                total.innerHTML = answer;
+                total.innerHTML = answer.toString().substr(0,9);
                 numbers = '';
             }
         });
