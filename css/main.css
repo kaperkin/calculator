@@ -3,35 +3,40 @@ body {
     font-size: 2em;
 }
 
-.container{
+.container {
     background-color: #777777;
     border-radius: 2px;
     margin-top: 10%;
-    max-width: 25%;
-    padding: 1em;
+    max-width: 325px;
+    padding: 1rem;
 }
 
 .col-lg-3 {
-    height: 2.5em;
-    margin: .3em;
-    width: 2.5em;
+    height: 5rem;
+    margin: .3rem;
+    width: 5rem;
     border-radius: 2px;
     background-color: #dcdcdc;
 }
 
 .total {
     background-color: #a7c2a3;
-    height: 50px;
-    width: 150px;
+    min-height: 50px;
+    min-width: 150px;
 }
 
+.plus {
+    height: 10.6rem;
+    position: absolute;
+    z-index: 100;
+}
 
-.point :hover{
+.point :hover {
     cursor: pointer;
     cursor: hand;
 }
 
-.row{
+.row {
     margin: auto;
     width: 90%;
 }
