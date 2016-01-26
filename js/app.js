@@ -94,7 +94,7 @@
 
         $("button").on('click', function () {
             var val = this.value;
- if (val === '0') {
+            if (val === '0') {
                 add('0');
             }
             if (Number(val) || val == '.') {
@@ -116,6 +116,9 @@
                 case '/':
                     pushIt('/');
                     break;
+                case '%':
+                    pushIt('%');
+                    break;
                 case 'AC':
                     numbers = '';
                     equation = [];
@@ -130,7 +133,7 @@
                         if (numbers.length == 0 && equation.length == 0) {
                             total.innerHTML = 0;
                         } else {
-                            total.innerHTML = equation[equation.length - 1];
+                            total.innerHTML = equation.join('');
                         }
                     }
                     break;
@@ -138,11 +141,12 @@
             function pushIt(val) {
                 equation.push(numbers, val);
                 numbers = '';
+                total.innerHTML = equation.join(' ') + ' ' + numbers.substr(0, 9);
             }
 
             function add(num) {
                 numbers += num;
-                total.innerHTML = numbers.substr(0, 9);
+                total.innerHTML = equation.join(' ') + ' ' + numbers.substr(0, 9);
             }
 
             function equals(equation) {
@@ -161,7 +165,13 @@
                         answer /= Number(next);
                     }
                 }
-                total.innerHTML = answer.toString().substr(0,9);
+                if (equation.indexOf('%') > -1) {
+                    answer = answer.toString().substr(0, 11) + '%';
+                    total.innerHTML = answer;
+                } else {
+                    answer = answer.toString().substr(0, 11);
+                    total.innerHTML = answer;
+                }
                 numbers = '';
             }
         });
