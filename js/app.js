@@ -127,7 +127,7 @@
                 case 'CE':
                     if (numbers.length > 0) {
                         numbers = '';
-                        total.innerHTML = equation[equation.length - 2];
+                        total.innerHTML = equation.join(' ');
                     } else {
                         equation.pop();
                         if (numbers.length == 0 && equation.length == 0) {
