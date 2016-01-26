@@ -78,6 +78,10 @@ body {
     color: #f8f8f8;
 }
 
+.foot p a:hover{
+    color: #638d89;
+}
+
 .wrapper {
     margin-bottom: 75px;
 }
