@@ -1,11 +1,14 @@
 body {
+    background-image: url('banner-math.jpg');
     background-color: #eeeeee;
+    background-size: cover;
     font-size: 2em;
 }
 
 .container {
-    background-color: #777777;
+    background-color: #676566;
     border-radius: 2px;
+    box-shadow: 2px 2px #a1a1a3;
     margin-top: 10%;
     max-width: 275px;
     padding: 1rem;
@@ -20,12 +23,12 @@ body {
 }
 
 .clear {
-    background-color: #ad2c2d;
+    background-color: #3a556d;
     color: #dcdcdc;
 }
 
 .equals{
-    background-color: #ff6329;
+    background-color: #638d89;
     color: #dcdcdc;
 }
 
@@ -52,4 +55,31 @@ body {
 .row {
     margin: auto;
     width: 90%;
+}
+
+.foot {
+    background-color: rgba(15, 15, 15, .8);
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+
+}
+
+.foot p {
+    margin-bottom: 0;
+    padding-top: 6px;
+    color: #638d89;
+}
+
+.foot p a {
+    color: #f8f8f8;
+}
+
+.wrapper {
+    margin-bottom: 75px;
 }
