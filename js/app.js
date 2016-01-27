@@ -111,10 +111,10 @@
                     pushIt('+');
                     break;
                 case '*':
-                    pushIt('*');
+                    pushIt('&times');
                     break;
                 case '/':
-                    pushIt('/');
+                    pushIt('&#247');
                     break;
                 case '%':
                     pushIt('%');
@@ -159,9 +159,9 @@
                         answer += Number(next);
                     } else if (equation[i] == '-') {
                         answer -= Number(next);
-                    } else if (equation[i] == '*') {
+                    } else if (equation[i] == '&times') {
                         answer *= Number(next);
-                    } else if (equation[i] == '/') {
+                    } else if (equation[i] == '&#247') {
                         answer /= Number(next);
                     }
                 }
