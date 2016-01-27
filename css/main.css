@@ -29,6 +29,7 @@ body {
 .clear {
     background-color: #d2cf1f;
     color: #202020;
+    font-weight: 600;
 }
 
 .clear:hover{
@@ -47,13 +48,13 @@ body {
     color: #b71d2c;
 }
 .equals{
-    background-color: #84bcb7;
+    background-color: #618be1;
     color: #202020;
     font-weight: 600;
 }
 .equals:hover{
     background-color: #202020;
-    color: #84bcb7;
+    color: #618be1;
 }
 
 .total {
@@ -101,7 +102,7 @@ body {
 .foot p {
     margin-bottom: 0;
     padding-top: 6px;
-    color: #84bcb7;
+    color: #618be1;
 }
 
 .foot p a {
@@ -109,6 +110,6 @@ body {
 }
 
 .foot p a:hover{
-    color: #84bcb7;
+    color: #618be1;
 }
 
