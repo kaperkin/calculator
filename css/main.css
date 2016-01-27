@@ -13,7 +13,7 @@ body {
     padding: 1rem;
 }
 
-.col-lg-3 {
+.point {
     height: 5rem;
     margin: .3rem;
     width: 5rem;
@@ -21,7 +21,7 @@ body {
     background-color: #dcdcdc;
 }
 
-.point:active{
+.point:active {
     color: #fefefe;
     background-color: #202020;
 }
@@ -32,27 +32,29 @@ body {
     font-weight: 600;
 }
 
-.clear:active{
+.clear:active {
     background-color: #202020;
     color: #d2cf1f;
 }
 
-.allClear{
+.allClear {
     background-color: #b71d2c;
     color: #fefefe;
     font-weight: 600;
 }
 
-.allClear:active{
+.allClear:active {
     background-color: #fefefe;
     color: #b71d2c;
 }
-.equals{
+
+.equals {
     background-color: #618be1;
     color: #202020;
     font-weight: 600;
 }
-.equals:active{
+
+.equals:active {
     background-color: #202020;
     color: #618be1;
 }
@@ -62,6 +64,7 @@ body {
     margin-bottom: 5%;
     min-height: 50px;
     min-width: 150px;
+    overflow: hidden;
     text-align: right;
 }
 
@@ -109,7 +112,7 @@ body {
     color: #f8f8f8;
 }
 
-.foot p a:hover{
+.foot p a:hover {
     color: #618be1;
 }
 
