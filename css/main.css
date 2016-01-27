@@ -11,6 +11,7 @@ body {
     margin-top: 10%;
     max-width: 275px;
     padding: 1rem;
+    z-index: 99;
 }
 
 .col-lg-3 {
@@ -94,6 +95,7 @@ body {
     left: 0;
     right: 0;
     height: 75px;
+    z-index: 1;
 
 }
 
