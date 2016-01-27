@@ -64,8 +64,9 @@ body {
     margin-bottom: 5%;
     min-height: 50px;
     min-width: 150px;
-    overflow: hidden;
+    overflow: auto;
     text-align: right;
+    padding-right: 0;
 }
 
 .plus {

@@ -141,12 +141,12 @@
             function pushIt(val) {
                 equation.push(numbers, val);
                 numbers = '';
-                total.innerHTML = equation.join(' ') + ' ' + numbers.substr(0, 19);
+                total.innerHTML = equation.join(' ') + ' ' + numbers;
             }
 
             function add(num) {
                 numbers += num;
-                total.innerHTML = equation.join(' ') + ' ' + numbers.substr(0, 19);
+                total.innerHTML = equation.join(' ') + ' ' + numbers;
             }
 
             function equals(equation) {
@@ -169,10 +169,10 @@
                 }
 
                 if (equation.indexOf('%') > -1) {
-                    answer = answer.toString().substr(0, 19) + '%';
+                    answer = answer.toString() + '%';
                     total.innerHTML = answer;
                 } else {
-                    answer = answer.toString().substr(0, 19);
+                    answer = answer.toString();
                     total.innerHTML = answer;
                 }
                 numbers = '';
