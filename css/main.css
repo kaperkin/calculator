@@ -21,7 +21,7 @@ body {
     background-color: #dcdcdc;
 }
 
-.point:hover{
+.point:active{
     color: #fefefe;
     background-color: #202020;
 }
@@ -32,7 +32,7 @@ body {
     font-weight: 600;
 }
 
-.clear:hover{
+.clear:active{
     background-color: #202020;
     color: #d2cf1f;
 }
@@ -43,7 +43,7 @@ body {
     font-weight: 600;
 }
 
-.allClear:hover{
+.allClear:active{
     background-color: #fefefe;
     color: #b71d2c;
 }
@@ -52,7 +52,7 @@ body {
     color: #202020;
     font-weight: 600;
 }
-.equals:hover{
+.equals:active{
     background-color: #202020;
     color: #618be1;
 }
@@ -71,7 +71,7 @@ body {
     z-index: 1;
 }
 
-.point :hover {
+.point:hover {
     cursor: pointer;
     cursor: hand;
 }

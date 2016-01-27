@@ -152,7 +152,9 @@
             function equals(equation) {
                 equation.push(numbers);
                 var answer = Number(equation[0]);
-
+                if (!Number(answer)) {
+                    equation = [];
+                }
                 for (var i = 1; i < equation.length; i++) {
                     var next = equation[i + 1];
                     if (equation[i] == '+') {
@@ -165,6 +167,7 @@
                         answer /= Number(next);
                     }
                 }
+
                 if (equation.indexOf('%') > -1) {
                     answer = answer.toString().substr(0, 11) + '%';
                     total.innerHTML = answer;
