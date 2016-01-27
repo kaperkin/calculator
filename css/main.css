@@ -21,14 +21,39 @@ body {
     background-color: #dcdcdc;
 }
 
-.clear {
-    background-color: #3a556d;
-    color: #dcdcdc;
+.point:hover{
+    color: #fefefe;
+    background-color: #202020;
 }
 
+.clear {
+    background-color: #d2cf1f;
+    color: #202020;
+}
+
+.clear:hover{
+    background-color: #202020;
+    color: #d2cf1f;
+}
+
+.allClear{
+    background-color: #b71d2c;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+.allClear:hover{
+    background-color: #fefefe;
+    color: #b71d2c;
+}
 .equals{
-    background-color: #638d89;
-    color: #dcdcdc;
+    background-color: #84bcb7;
+    color: #202020;
+    font-weight: 600;
+}
+.equals:hover{
+    background-color: #202020;
+    color: #84bcb7;
 }
 
 .total {
@@ -55,12 +80,16 @@ body {
     width: 90%;
 }
 
+.wrapper {
+    margin-bottom: 75px;
+}
+
 .foot {
     background-color: rgba(15, 15, 15, .8);
     margin-bottom: 0;
     margin-left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -71,7 +100,7 @@ body {
 .foot p {
     margin-bottom: 0;
     padding-top: 6px;
-    color: #638d89;
+    color: #84bcb7;
 }
 
 .foot p a {
@@ -79,9 +108,6 @@ body {
 }
 
 .foot p a:hover{
-    color: #638d89;
+    color: #84bcb7;
 }
 
-.wrapper {
-    margin-bottom: 75px;
-}
