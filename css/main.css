@@ -5,6 +5,36 @@ body {
     font-size: 2em;
 }
 
+.container {
+    background-color: #676566;
+    border-radius: 3px;
+    margin-top: 10%;
+    max-width: 275px;
+    padding: 1rem;
+}
+
+
+
+.point {
+    height: 5rem;
+    margin: .3rem;
+    width: 5rem;
+    border-radius: 2px;
+    background-color: #dcdcdc;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.point:active {
+    color: #fefefe;
+    background-color: #202020;
+}
+
+.point:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .allClear {
     background-color: #b71d2c;
     color: #fefefe;
@@ -15,15 +45,6 @@ body {
     background-color: #fefefe;
     color: #b71d2c;
 }
-
-.container {
-    background-color: #676566;
-    border-radius: 3px;
-    margin-top: 10%;
-    max-width: 275px;
-    padding: 1rem;
-}
-
 .clear {
     background-color: #d2cf1f;
     color: #202020;
@@ -50,26 +71,6 @@ body {
     height: 10.6rem;
     position: absolute;
     z-index: 1;
-}
-
-.point {
-    height: 5rem;
-    margin: .3rem;
-    width: 5rem;
-    border-radius: 2px;
-    background-color: #dcdcdc;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.point:active {
-    color: #fefefe;
-    background-color: #202020;
-}
-
-.point:hover {
-    cursor: pointer;
-    cursor: hand;
 }
 
 .row {
