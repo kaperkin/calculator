@@ -1,4 +1,4 @@
-//(function () {
+/*(function () {
 //    'use strict';
 //
 //    var numbers = '';
@@ -85,6 +85,7 @@
 //    }
 //})
 //();
+*/
 
 ( function ($) {
     'use strict';

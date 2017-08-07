@@ -5,25 +5,23 @@ body {
     font-size: 2em;
 }
 
+.allClear {
+    background-color: #b71d2c;
+    color: #fefefe;
+    font-weight: 600;
+}
+
+.allClear:active {
+    background-color: #fefefe;
+    color: #b71d2c;
+}
+
 .container {
     background-color: #676566;
     border-radius: 3px;
     margin-top: 10%;
     max-width: 275px;
     padding: 1rem;
-}
-
-.point {
-    height: 5rem;
-    margin: .3rem;
-    width: 5rem;
-    border-radius: 2px;
-    background-color: #dcdcdc;
-}
-
-.point:active {
-    color: #fefefe;
-    background-color: #202020;
 }
 
 .clear {
@@ -37,17 +35,6 @@ body {
     color: #d2cf1f;
 }
 
-.allClear {
-    background-color: #b71d2c;
-    color: #fefefe;
-    font-weight: 600;
-}
-
-.allClear:active {
-    background-color: #fefefe;
-    color: #b71d2c;
-}
-
 .equals {
     background-color: #618be1;
     color: #202020;
@@ -59,20 +46,25 @@ body {
     color: #618be1;
 }
 
-.total {
-    background-color: #a7c2a3;
-    margin-bottom: 5%;
-    min-height: 50px;
-    min-width: 150px;
-    overflow: auto;
-    text-align: right;
-    padding-right: 0;
-}
-
 .plus {
     height: 10.6rem;
     position: absolute;
     z-index: 1;
+}
+
+.point {
+    height: 5rem;
+    margin: .3rem;
+    width: 5rem;
+    border-radius: 2px;
+    background-color: #dcdcdc;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.point:active {
+    color: #fefefe;
+    background-color: #202020;
 }
 
 .point:hover {
@@ -83,6 +75,16 @@ body {
 .row {
     margin: auto;
     width: 90%;
+}
+
+.total {
+    background-color: #a7c2a3;
+    margin-bottom: 5%;
+    min-height: 50px;
+    min-width: 150px;
+    overflow: auto;
+    text-align: right;
+    padding-right: 0;
 }
 
 .wrapper {
