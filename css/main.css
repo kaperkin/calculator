@@ -3,6 +3,7 @@ body {
     background-color: #eeeeee;
     background-size: cover;
     font-size: 2em;
+    height: 100%;
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 
 .point {
     height: 5rem;
-    margin: .3rem;
+    margin: .36rem;
     width: 5rem;
     border-radius: 2px;
     background-color: #dcdcdc;
@@ -88,38 +89,42 @@ body {
     padding-right: 0;
 }
 
-.wrapper {
-    margin-bottom: 75px;
+.wrapper{
+  height: 100%;
 }
 
 .foot {
   background-color: rgba(15,15,15, .8);
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: auto;
+  max-width: 1500px;
   width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
-  position: absolute;
   padding: 25px 0 30px 0;
+  position: absolute;
 }
 
-
 .foot p {
-    margin-bottom: 0;
-    color: #618be1;
+  color: #618be1;
+  margin-bottom: 0;
+  padding-top: 6px;
 }
 
 .foot p a {
-    color: #f8f8f8;
+  color: #f8f8f8;
 }
 
-.foot p a:hover {
-    color: #618be1;
+.foot p a:hover, .foot p a:active {
+  color: #618be1;
 }
 
 @media (max-width: 700px) {
+  .foot{
+    margin-top: 10%;
+    position: relative;
+  }
   .foot p {
-  text-align: center;
-}
-}
+    text-align: center;
+  }
+  }
